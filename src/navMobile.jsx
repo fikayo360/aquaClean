@@ -9,7 +9,7 @@ const NavMobile = ({navActive}) => {
                 <img src='./close.png' className="w-[20px] h-[20px]" onClick={navActive}/>
             </div>
             <div className="w-[100%] h-[80%] flex pl-3 items-center justify-center">
-                <ul className="w-[100%] h-[80%]  flex flex-col gap-[3rem] md:gap-[5rem] md:items-center">
+                <ul className="w-[100%] h-[80%]  flex flex-col gap-[5rem] md:gap-[5rem] md:items-center">
                     <li ref={ref} className=''><a href='#hero' className="text-6xl font-bold font-mont">Home</a></li>
                     <li ref={ref} ><a href="#about" className="text-6xl font-bold font-mont">about</a></li>
                     <li ref={ref}><a href="#services" className="text-6xl font-bold font-mont">services</a></li>

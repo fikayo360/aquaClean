@@ -2,7 +2,7 @@ const Contact = () => {
     return (
         <div id="contact" className="w-screen h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative" style={{backgroundImage:'url(./contact.jpg)'}}>
 
-            <div  className="flex w-[80%] h-[75%] md:w-[60%] md:h-[70%] flex-col items-center justify-center p-2 border-1 rounded-3xl bg-white relative">
+            <div  className="flex w-[80%] h-[65%] md:w-[60%] md:h-[70%] flex-col items-center justify-center p-2 border-1 rounded-3xl bg-white relative">
                 <img className="absolute w-50 h-50 top-3 left-3" src="./drops.png"/>
                 <img className="absolute w-50 h-50 bottom-3 right-3" src="./drops.png"/>
                 <h1 className="text-3xl font-bold mb-3 font-pop">contact us </h1>
@@ -15,7 +15,7 @@ const Contact = () => {
                     </div>
 
 
-                    <form className="flex flex-col w-[100%]  gap-8 items-center justify-center">
+                    <form className="flex flex-col w-[100%]  gap-5 items-center justify-center">
                         <input type='text' placeholder="name" className=" w-[70%] h-[3rem]  border-2 rounded-md border-black p-3 font-pop"/>
                         <input type='text' placeholder="email" className="w-[70%] h-[3rem]  border-2 rounded-md border-black p-3 font-pop" />
                         <input type='textarea' placeholder="your message" className="w-[70%] h-[8rem] rounded-md border-2 border-black p-3 font-pop"/>
