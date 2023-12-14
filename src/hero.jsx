@@ -36,7 +36,7 @@ const Hero = () => {
                     </p>
                     
                 </div>
-
+   
             </div>
 
         </div>
