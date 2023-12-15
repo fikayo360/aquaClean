@@ -8,7 +8,7 @@ import 'animate.css';
 function App() {
 
   return (
-    <div className="overflow-auto">
+    <div className="">
      <Hero />
      <About />
      <OurServices />

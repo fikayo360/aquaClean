@@ -1,25 +1,25 @@
 const Contact = () => {
     return (
-        <div id="contact" className="w-screen h-[130vh] md:h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative overflow-auto" style={{backgroundImage:'url(./contact.jpg)'}}>
+        <div id="contact" className="w-screen h-[100vh] md:h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative overflow-scroll" style={{backgroundImage:'url(./contact.jpg)'}}>
 
-            <div  className="flex w-[80%] h-[55%] md:w-[60%] md:h-[73%] flex-col items-center justify-center border-1 rounded-3xl bg-white relative overflow-scroll">
-                <img className="absolute w-50 h-50 top-3 left-3" src="./drops.png"/>
-                <img className="absolute w-50 h-50 bottom-3 right-3" src="./drops.png"/>
-                <h1 className="text-3xl font-bold mb-3 font-pop">contact us </h1>
+            <div  className="flex w-[90%] h-[68%] md:w-[70%] md:h-[55%] lg:h-[70%] flex-col items-center justify-center border-1 rounded-3xl bg-white relative">
+                <img className="absolute w-30 h-30 top-3 left-3" src="./drops.png"/>
+                <img className="absolute w-30 h-30 bottom-3 right-3" src="./drops.png"/>
+                <h1 className="text-[1.2rem] font-bold mb-1 font-pop">contact us </h1>
                 <div className="w-[100%] h-[80%] flex gap-10 flex-col items-center">
 
                     <div className="flex flex-col gap-1 items-center">
-                        <h1 className="text-1xl font-pop">+288 764 333 72 </h1>
-                        <h1 className="text-1xl font-pop">+268 799 788 70 </h1>
-                        <h1 className="text-1xl font-pop">aquaclean@gmail.com</h1>
+                        <h1 className="text-[13px] font-pop">+288 764 333 72 </h1>
+                        <h1 className="text-[13px] font-pop">+268 799 788 70 </h1>
+                        <h1 className="text-[13px] font-pop">aquaclean@gmail.com</h1>
                     </div>
 
 
                     <form className="flex flex-col w-[100%] h-[78%] gap-5 items-center justify-center">
-                        <input type='text' placeholder="name" className=" w-[70%] h-[3rem]  border-2 rounded-md border-black p-3 font-pop"/>
-                        <input type='text' placeholder="email" className="w-[70%] h-[3rem]  border-2 rounded-md border-black p-3 font-pop" />
-                        <input type='textarea' placeholder="your message" className="w-[70%] h-[8rem] rounded-md border-2 border-black p-3 font-pop"/>
-                        <button className="w-[60%] lg:w-[35%] h-[3rem] rounded-md bg-green-600 font-bold hover:text-slate-600 text-white text-[1.1rem] flex items-center justify-center font-pop">Send</button>
+                        <input type='text' placeholder="name" className=" w-[80%] h-[3rem] lg:h-[4.5rem]  border-2 rounded-md border-black p-3 font-pop"/>
+                        <input type='text' placeholder="email" className="w-[80%] h-[3rem] lg:h-[4.5rem]  border-2 rounded-md border-black p-3 font-pop" />
+                        <input type='textarea' placeholder="your message" className="w-[80%] h-[8rem] lg:h-[10rem] rounded-md border-2 border-black p-3 font-pop"/>
+                        <button className="w-[60%] lg:w-[40%] h-[2.5rem] lg:[h-4rem] rounded-md bg-green-600 font-bold hover:text-slate-600 text-white text-[13px] lg:text-[1.2rem] flex items-center justify-center font-pop">Send</button>
                     </form>
 
                 </div>
