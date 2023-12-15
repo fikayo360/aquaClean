@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-        <div id="contact" className="w-screen h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative  overflow-y-hidden" style={{backgroundImage:'url(./contact.jpg)'}}>
+        <div id="contact" className="w-screen h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative  overflow-y-scroll" style={{backgroundImage:'url(./contact.jpg)'}}>
 
             <div  className="flex w-[80%] h-[70%] md:w-[60%] md:h-[70%] flex-col items-center justify-center pt-10 border-1 rounded-3xl bg-white relative overflow-y-hidden">
                 <img className="absolute w-50 h-50 top-3 left-3" src="./drops.png"/>
