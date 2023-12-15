@@ -1,6 +1,6 @@
 const Navbar = ({navActive}) => {
     return (
-    <div className="w-[100%] h-[8%] mt-[1rem] flex items-center justify-center">
+    <div className="w-[100%] h-[8%] mt-[1rem] flex items-center justify-center overflow-hidden">
         
         <div className="w-[100%] px-5 lg:w-[95%] flex justify-between items-center flex-row" >
 

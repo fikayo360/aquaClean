@@ -19,7 +19,7 @@ const Hero = () => {
      }
 
     return(
-        <div id="hero" className="w-screen h-screen bg-cover bg-center bg-no-repeat flex flex-col relative mb-[4rem]" style={{backgroundImage:'url(./heroBg.jpg)'}}>
+        <div id="hero" className="w-screen h-screen bg-cover bg-center bg-no-repeat flex flex-col relative mb-[4rem] overflow-hidden" style={{backgroundImage:'url(./heroBg.jpg)'}}>
             <Navbar navActive={toggleMobileNav} />
             {navActive?<NavMobile navActive={toggleMobileNav} />:null}
             <div className="w-[100%] h-[90%] flex flex-col justify-center lg:items-start items-center lg:pl-10"> 
