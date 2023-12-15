@@ -1,6 +1,6 @@
 const Team = () => {
     return (
-        <div id="team" className="w-screen h-screen flex justify-center items-center  bg-cover bg-center bg-no-repeat bg-blend-darken " style={{backgroundImage:'url(./team.jpg)'}} >
+        <div id="team" className="w-screen h-screen flex justify-center items-center  bg-cover bg-center bg-no-repeat bg-blend-darken overflow-scroll " style={{backgroundImage:'url(./team.jpg)'}} >
           
             <div className=" w-[80%] h-[65%] md:h-[50%] lg:w-[50%] lg:h-[48%] flex flex-col p-10 border-1 rounded-3xl bg-white ">
                 <h1 className="text-[1.3rem] text-center lg:text-start md:text-4xl text-black font-bold mb-5 font-pop">Our Team: The Backbone of Cleanliness </h1>
