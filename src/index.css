@@ -5,3 +5,9 @@
 html{
     scroll-behavior: smooth;
   }
+
+
+  input,textarea:focus{
+    outline: none;
+    overflow: hidden;
+  }
