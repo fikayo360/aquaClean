@@ -8,14 +8,14 @@ import 'animate.css';
 function App() {
 
   return (
-    <>
+    <div className="overflow-auto">
      <Hero />
      <About />
      <OurServices />
      <Team />
      <Contact />
      <Footer />
-    </>
+    </div>
   )
 }
 
