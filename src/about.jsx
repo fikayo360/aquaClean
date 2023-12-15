@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div id="about" className="w-screen h-[150vh] lg:h-[75vh] flex flex-col lg:flex-row mb-20">
+        <div id="about" className="w-screen h-[170vh] lg:h-[75vh] flex flex-col lg:flex-row mb-20">
             <div className="w-[100%] lg:w-[50%] h-[100%] bg-cover bg-center bg-no-repeat" style={{backgroundImage:'url(./about.jpg)'}}></div>
 
             <div className="w-[100%] lg:w-[50%] flex flex-col p-5 justify-center">

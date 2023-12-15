@@ -24,7 +24,7 @@ const Hero = () => {
             {navActive?<NavMobile navActive={toggleMobileNav} />:null}
             <div className="w-[100%] h-[90%] flex flex-col justify-center lg:items-start items-center lg:pl-10"> 
 
-                <div className="w-[88%] h-[60%] md:h-[50%] lg:w-[40%] lg:h-[60%] flex flex-col items-center justify-center p-5 border-1 rounded-3xl bg-white pt-5">
+                <div className="w-[88%] h-[68%] md:h-[50%] lg:w-[40%] lg:h-[60%] flex flex-col items-center justify-center p-5 border-1 rounded-3xl bg-white pt-5">
                     <h1 ref={ref} className={`text-3xl lg:text-5xl font-bold text-black uppercase mb-2 md:mb-6 lg:mb-8 ${inView?'animate__shakeX':''}`}>Aqua-Clean</h1>
                     <h1 className="text-[15px] md:text-[1.5rem] lg:text-2xl font-bold text-black mb-1 md:mb-6 lg:mb-5">{`we offer - ${text}`}</h1>
                     <h1 className="text-[15px]  md:text-[1rem] lg:text-2xl text-black text-center font-bold mb-2 lg:mb-5">We provide top-notch janitorial services that will make your space shine</h1>

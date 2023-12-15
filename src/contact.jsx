@@ -3,8 +3,8 @@ const Contact = () => {
         <div id="contact" className="w-screen h-[100vh] md:h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative overflow-scroll" style={{backgroundImage:'url(./contact.jpg)'}}>
 
             <div  className="flex w-[90%] h-[68%] md:w-[70%] md:h-[55%] lg:h-[70%] flex-col items-center justify-center border-1 rounded-3xl bg-white relative">
-                <img className="absolute w-30 h-30 top-3 left-3" src="./drops.png"/>
-                <img className="absolute w-30 h-30 bottom-3 right-3" src="./drops.png"/>
+                <img className="absolute w-[30px] h-[30px] top-3 left-3" src="./drops.png"/>
+                <img className="absolute w-[30px] h-[30px] bottom-3 right-3" src="./drops.png"/>
                 <h1 className="text-[1.2rem] font-bold mb-1 font-pop">contact us </h1>
                 <div className="w-[100%] h-[80%] flex gap-10 flex-col items-center">
 
