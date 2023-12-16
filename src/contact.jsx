@@ -16,7 +16,7 @@ const Contact = () => {
                     </div>
 
 
-                    <form className="flex flex-col w-[100%] h-[85%] gap-3 items-center justify-center abolute ">
+                    <form className="flex flex-col w-[100%] h-[85%] gap-3 items-center justify-center abolute bg-slate-600">
                         <input type='text' placeholder="name" className=" w-[80%] h-[3.5rem] lg:h-[4.5rem]  border-2 rounded-md border-black p-3 font-pop"/>
                         <input type='text' placeholder="email" className="w-[80%] h-[3.5rem] lg:h-[4.5rem]  border-2 rounded-md border-black p-3 font-pop" />
                         <input type='textarea' placeholder="your message" className="w-[80%] h-[8rem] lg:h-[10rem] rounded-md border-2 border-black p-3 font-pop"/>
