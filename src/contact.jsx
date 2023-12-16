@@ -18,12 +18,12 @@ const Contact = () => {
                     </div>
 
 
-                    <form className="flex flex-col w-[100%] h-[90%] gap-3 items-center justify-center abolute">
+                    <div className="flex flex-col w-[100%] h-[90%] gap-3 items-center justify-center abolute">
                         <input type='text' placeholder="name" className=" w-[80%] h-[3.5rem] lg:h-[4.5rem]  border-2 rounded-md border-black p-3 font-pop"/>
                         <input type='text' placeholder="email" className="w-[80%] h-[3.5rem] lg:h-[4.5rem]  border-2 rounded-md border-black p-3 font-pop" />
                         <input type='textarea' placeholder="your message" className="w-[80%] h-[8rem] lg:h-[10rem] rounded-md border-2 border-black p-3 font-pop"/>
                         <button className="w-[60%] lg:w-[40%] h-[2.8rem] lg:[h-5rem] rounded-md bg-green-600 font-bold hover:text-slate-600 text-white text-[13px] lg:text-[1.2rem] flex items-center justify-center font-pop">Send</button>
-                    </form>
+                    </div>
 
                 </div>
             </div>

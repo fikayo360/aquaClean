@@ -9,12 +9,12 @@ function App() {
 
   return (
     <div className="overflow-hidden">
-     <Hero />
+     {/* <Hero />
      <About />
      <OurServices />
-     <Team />
+     <Team /> */}
      <Contact />
-     <Footer />
+     {/* <Footer /> */}
     </div>
   )
 }
