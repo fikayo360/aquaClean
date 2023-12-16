@@ -1,0 +1,9 @@
+#scroll-container{
+    height: calc(100% - 10%);
+    overflow-y: scroll;
+}
+
+input{
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}

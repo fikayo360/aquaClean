@@ -1,21 +1,7 @@
 import { useState,useEffect } from "react"
-
+import './contact.css'
 const Contact = () => {
-    const [isKeyboardVisible,setKeyboardVisible] = useState(false)
-
-    useEffect(()=>{
-        const handleResize = () => {
-            setKeyboardVisible(window.innerHeight  < window.outerHeight)
-        }
-
-        window.addEventListener("resize", handleResize)
-
-        return () => {
-            window.removeEventListener("resize",handleResize)
-        }
-    },[])
-
-    const formStyle = isKeyboardVisible ? {position:'absolute'} : {position:'static'}
+ 
 
     return (
         <div id="contact" className="w-screen h-[100vh] md:h-screen bg-cover bg-center pt-20 bg-no-repeat flex flex-col items-center md:justify-center relative" style={{backgroundImage:'url(./contact.jpg)'}}>
@@ -36,12 +22,12 @@ const Contact = () => {
                     </div>
 
 
-                    <form className="flex flex-col w-[100%] h-[90%] gap-3 items-center justify-center" style={formStyle}>
+                    <div id='scroll-container' className="flex flex-col w-[100%] gap-3 items-center justify-center">
                         <input type='text' placeholder="name" className=" w-[80%] h-[3.5rem] lg:h-[4.5rem]  border-2 rounded-md border-black p-3 font-pop"/>
                         <input type='text' placeholder="email" className="w-[80%] h-[3.5rem] lg:h-[4.5rem]  border-2 rounded-md border-black p-3 font-pop" />
                         <input type='textarea' placeholder="your message" className="w-[80%] h-[8rem] lg:h-[10rem] rounded-md border-2 border-black p-3 font-pop"/>
                         <button className="w-[60%] lg:w-[40%] h-[2.8rem] lg:[h-5rem] rounded-md bg-green-600 font-bold hover:text-slate-600 text-white text-[13px] lg:text-[1.2rem] flex items-center justify-center font-pop">Send</button>
-                    </form>
+                    </div>
 
                 </div>
             </div>
