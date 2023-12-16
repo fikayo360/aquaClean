@@ -1,6 +1,24 @@
+import { useState,useEffect } from "react"
+
 const Contact = () => {
+    const [isKeyboardVisible,setKeyboardVisible] = useState(false)
+
+    useEffect(()=>{
+        const handleResize = () => {
+            setKeyboardVisible(window.innerHeight  < window.outerHeight)
+        }
+
+        window.addEventListener("resize", handleResize)
+
+        return () => {
+            window.removeEventListener("resize",handleResize)
+        }
+    },[])
+
+    const formStyle = isKeyboardVisible ? {position:'absolute'} : {position:'static'}
+
     return (
-        <div id="contact" className="w-screen h-[100vh] md:h-screen bg-cover bg-center pt-20 bg-no-repeat flex flex-col items-center md:justify-center  overflow-scroll relative" style={{backgroundImage:'url(./contact.jpg)'}}>
+        <div id="contact" className="w-screen h-[100vh] md:h-screen bg-cover bg-center pt-20 bg-no-repeat flex flex-col items-center md:justify-center relative" style={{backgroundImage:'url(./contact.jpg)'}}>
 
             <div  className="flex w-[90%] h-[70%] md:w-[70%] md:h-[55%] lg:h-[70%]  pb-[4rem] md:pt-3 flex-col items-center justify-center border-1  bg-white rounded-3xl 
             relative">
@@ -18,7 +36,7 @@ const Contact = () => {
                     </div>
 
 
-                    <form className="flex flex-col w-[100%] h-[90%] gap-3 items-center justify-center abolute top-0 left-0 right-0 bottom-0">
+                    <form className="flex flex-col w-[100%] h-[90%] gap-3 items-center justify-center" style={formStyle}>
                         <input type='text' placeholder="name" className=" w-[80%] h-[3.5rem] lg:h-[4.5rem]  border-2 rounded-md border-black p-3 font-pop"/>
                         <input type='text' placeholder="email" className="w-[80%] h-[3.5rem] lg:h-[4.5rem]  border-2 rounded-md border-black p-3 font-pop" />
                         <input type='textarea' placeholder="your message" className="w-[80%] h-[8rem] lg:h-[10rem] rounded-md border-2 border-black p-3 font-pop"/>
