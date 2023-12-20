@@ -9,6 +9,14 @@ import { useState,useEffect } from "react"
 
 function App() {
   
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const viewport = document.querySelector('meta[name=viewport]');
+      if (viewport) {
+        viewport.setAttribute('content', viewport.content + `, height=${window.innerHeight}`);
+      }
+    }
+  }, []);
 
   return (
     <div className="overflow-hidden min-h-[700px]">
