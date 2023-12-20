@@ -4,9 +4,9 @@ const Contact = () => {
     
 
     return (
-        <div id="contact" className="w-screen h-[100vh] md:h-screen bg-cover bg-center md:pt-20 bg-no-repeat flex flex-col items-center justify-center relative overflow-scroll" style={{backgroundImage:'url(./contact.jpg)'}}>
+        <div id="contact" className="w-screen h-[120vh] md:h-screen bg-cover bg-center md:pt-20 bg-no-repeat flex flex-col items-center justify-center relative overflow-scroll" style={{backgroundImage:'url(./contact.jpg)'}}>
 
-            <div  className="flex w-[90%] h-[500px] md:w-[70%] md:h-[55%] lg:h-[70%]  pb-[4rem] md:pt-3 flex-col items-center justify-center border-1  bg-white rounded-3xl 
+            <div  className="flex w-[90%] h-[550px] md:w-[70%] md:h-[55%] lg:h-[70%]  pb-[4rem] md:pt-3 flex-col items-center justify-center border-1  bg-white rounded-3xl 
             relative overflow-scroll">
                 
                 <img className="absolute w-[30px] h-[30px] top-3 left-3" src="./drops.png"/>
