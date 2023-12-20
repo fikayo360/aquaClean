@@ -9,30 +9,35 @@ import { useState,useEffect } from "react"
 
 function App() {
   
-  const [isInputFocused, setIsInputFocused] = useState(false);
+  const [dimensions, setDimensions] = useState({
+    width: Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
+    height: Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
+  });
 
-  // Listen for the focus event on input elements
-  const handleInputFocus = () => {
-    setIsInputFocused(true);
-  };
-
-  // Listen for the blur event on input elements
-  const handleInputBlur = () => {
-    setIsInputFocused(false);
-  };
-
-  // Effect to dynamically adjust layout when input is focused
   useEffect(() => {
-    if (isInputFocused) {
-      // Adjust layout when the input is focused
-      document.documentElement.style.height = '100%';
-      document.body.style.height = '100%';
-    } else {
-      // Restore original layout height when input loses focus
-      document.documentElement.style.height = 'auto';
-      document.body.style.height = 'auto';
-    }
-  }, [isInputFocused]);
+    const updateDimensions = () => {
+      const w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+      const h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+      setDimensions({ width: w, height: h });
+
+      // Set styles directly on html and body elements
+      document.documentElement.style.width = `${w}px`;
+      document.documentElement.style.height = `${h}px`;
+      document.body.style.width = `${w}px`;
+      document.body.style.height = `${h}px`;
+    };
+
+    // Set dimensions when the component mounts
+    updateDimensions();
+
+    // Update dimensions when the window is resized
+    window.addEventListener('resize', updateDimensions);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', updateDimensions);
+    };
+  }, []); // Empty dependency array to run the effect only once on mount
 
   return (
     <div className="overflow-hidden">
@@ -40,7 +45,7 @@ function App() {
      <About />
      <OurServices />
      <Team />
-     <Contact handleInputBlur={handleInputBlur} handleInputFocus={handleInputFocus} />
+     <Contact />
      <Footer />
     </div>
   )
