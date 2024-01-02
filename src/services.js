@@ -33,7 +33,7 @@
     },
     {
         name:'floor cleaning',
-        bg:'https://www.nationalfloorsdirect.com/blog-img/95/9555/46773.jpg'
+        bg:'https://hips.hearstapps.com/hmg-prod/images/woman-cleaning-kitchen-floor-royalty-free-image-1677267162.jpg'
     },
     {
         name:'event cleaning',
