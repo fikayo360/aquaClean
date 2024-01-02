@@ -26,9 +26,9 @@ const Contact = () => {
             setSucess(false)
         });
     }
-    
+
     return (
-        <div id="contact" className="w-screen h-[120vh] md:h-screen bg-cover bg-center md:pt-20 bg-no-repeat flex flex-col items-center justify-center relative overflow-scroll" style={{backgroundImage:'url(./contact.jpg)'}}>
+        <div id="contact" className="w-screen h-[120vh] md:h-screen bg-cover bg-center md:pt-20 bg-no-repeat flex flex-col items-center justify-center relative" style={{backgroundImage:'url(./contact.jpg)'}}>
 
             <div ref={ref} className={`flex w-[90%] h-[550px] md:w-[70%] md:h-[65%] lg:h-[75%]  pb-[4rem] md:pt-3 flex-col items-center justify-center border-1  bg-[#e6e6fa] rounded-3xl 
             relative overflow-scroll ${inView?'animate__animated animate__swing animate__slow':''}`}>
