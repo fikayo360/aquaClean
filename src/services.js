@@ -37,7 +37,7 @@
     },
     {
         name:'event cleaning',
-        bg:'https://i.pinimg.com/474x/09/b6/7e/09b67e66c31110b69afe811be419c09a.jpg'
+        bg:'https://ceworld.com/wp-content/uploads/2021/06/Virus-Protection-Stadium-Cleaning-Services.jpg'
     },
 ]
 

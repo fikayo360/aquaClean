@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 const NavMobile = ({navActive}) => { 
     const [ref, inView] = useInView();
     return (
-        <div ref={ref} className={`w-[100%] h-[96%] flex lg:hidden flex-col absolute z-10 bg-[#6E44FF] overflow-hidden ${inView?'animate__animated animate__fadeInDown':''}`} >
+        <div ref={ref} className={`w-[100%] h-[96%] flex lg:hidden flex-col absolute z-10 bg-[#6E44FF] overflow-hidden ${inView?'animate__animated animate__fadeIn':''}`} >
             <div className="w-[100%] h-[10%] flex justify-between items-center px-3 md:px-5">
                 <span className="text-[1.2rem] md:text-[1.4rem] font-bold uppercase font-pop">AquaClean </span>
                 <img src='./close.png' className="w-[20px] h-[20px]" onClick={navActive}/>

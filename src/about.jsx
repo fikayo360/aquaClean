@@ -4,7 +4,7 @@ const About = () => {
     const [ref, inView] = useInView();
 
     return (
-        <div id="about" className="w-screen h-[150vh] lg:h-[80vh] flex flex-col lg:flex-row mb-20 overflow-hidden bg-[#f8f8f8]">
+        <div id="about" className="w-screen h-[170vh] lg:h-[80vh] flex flex-col lg:flex-row mb-20 overflow-hidden bg-[#f8f8f8]">
             <div className="w-[100%] lg:w-[50%] h-[100%] lg:h-[95%] xl:h-[93%] xl:w-[48%] bg-cover bg-center bg-no-repeat" style={{backgroundImage:'url(./about.jpg)'}}></div>
 
             <div ref={ref} className={`w-[100%] lg:w-[50%] lg:h-[98%] flex flex-col p-5 lg:p-2 lg:pt-2 justify-center ${inView?'animate__animated animate__fadeIn animate__slow':''}`}>
