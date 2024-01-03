@@ -1,6 +1,7 @@
 import { useState,useEffect,useRef } from "react"
 import './contact.css'
 import { useInView } from 'react-intersection-observer';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [ref, inView] = useInView();
@@ -14,11 +15,12 @@ const Contact = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
-        emailjs.sendForm('service_jx6w5ai', 'template_xwd49nd', form.current, 'kIFtlPOFPG99QtOXO')
+        emailjs.sendForm('service_ur27xrw', 'template_0f25454', form.current, 'ervbqeKqESsyECPJI')
         .then((result) => {
             console.log(result.text);
             setSucess(!success)
             setNot('sent successfully')
+            console.log(notification);
             form.current.reset();
             clear()
         }, (error) => { 
@@ -46,13 +48,13 @@ const Contact = () => {
                     </div>
 
 
-                    <form className="flex flex-col w-[100%] gap-3 items-center justify-center" onSubmit={handleSubmit}>
-                        <input type='text' placeholder="name" className=" w-[80%] h-[3rem] lg:h-[4rem]  border-2 rounded-md border-black p-3 font-pop"  />
-                        <input type='text' placeholder="email" className="w-[80%] h-[3rem] lg:h-[4rem]  border-2 rounded-md border-black p-3 font-pop"  />
-                        <input type='textarea' placeholder="your message" className="w-[80%] h-[7rem] lg:h-[8rem] rounded-md border-2 border-black p-3 font-pop" />
-                        <button className="w-[60%] lg:w-[40%] h-[2.8rem] lg:[h-5rem] rounded-md bg-green-600 font-bold hover:text-slate-600 text-white text-[13px] lg:text-[1.2rem] 
+                    <form ref={form} className="flex flex-col w-[100%] gap-3 items-center justify-center" onSubmit={handleSubmit}>
+                        <input type='text' placeholder="name" className=" w-[80%] h-[3rem] lg:h-[4rem]  border-2 rounded-md border-black p-3 font-pop" name="name" />
+                        <input type='text' placeholder="email" className="w-[80%] h-[3rem] lg:h-[4rem]  border-2 rounded-md border-black p-3 font-pop"  name="email" />
+                        <input type='textarea' placeholder="your message" className="w-[80%] h-[7rem] lg:h-[8rem] rounded-md border-2 border-black p-3 font-pop"  name="message" />
+                        <button className="w-[60%] lg:w-[40%] h-[2.8rem] lg:[h-5rem] rounded-md bg-green-600 hover:bg-green-800 font-bold hover:text-slate-600 text-white text-[13px] lg:text-[1.2rem] 
                         flex items-center justify-center font-pop">Send</button>
-                        <span className="text-[1rem] text-green-700">{notification}</span>
+                        <span className="text-[1rem] text-green-700 font-bold">{notification}</span>
                     </form>
 
                 </div>
